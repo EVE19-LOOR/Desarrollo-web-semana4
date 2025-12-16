@@ -1,0 +1,78 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+    background-color: #f4f7fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.titulo-principal {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 AJUSTE GENERAL DE IMÁGENES */
+.card img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* 🔹 AJUSTE ESPECIAL PARA LA IMAGEN DE BOOTSTRAP */
+.img-bootstrap {
+    object-fit: contain;
+    background-color: #6f2cf3;
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* ===== BOTÓN ===== */
+.btn-primary {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Bootstrap</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mi Sitio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <header class="container text-center my-5">
+        <h1 class="titulo-principal">Página Web Moderna con Bootstrap 5</h1>
+        <p class="lead text-secondary">
+            Diseño responsivo usando Grid, Flexbox y CSS3 avanzado
+        </p>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section class="container mb-5">
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-primary">
+                    <img src="img/descarga (3).jpg"
+                         class="card-img-top img-fluid"
+                         alt="Diseño Responsivo">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Diseño Responsivo</h3>
+                        <p class="card-text">
+                            Adaptación automática a móviles, tablets y escritorio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 (CORREGIDA) -->
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="img/images (2).jpg"
+                         class="card-img-top img-fluid img-bootstrap"
+                         alt="Bootstrap Grid">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Bootstrap Grid</h3>
+                        <p class="card-text">
+                            Uso de filas y columnas para un diseño flexible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-warning">
+                    <img src="img/descarga (4).jpg"
+                         class="card-img-top img-fluid"
+                         alt="CSS3 Avanzado">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">CSS3 Avanzado</h3>
+                        <p class="card-text">
+                            Animaciones, transiciones y media queries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOTÓN COLLAPSE -->
+    <div class="container text-center mb-5">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+            Mostrar más información
+        </button>
+
+        <div id="infoExtra" class="collapse mt-3">
+            <div class="card card-body border-primary">
+                Este contenido se muestra u oculta usando el componente
+                <strong>Collapse</strong> de Bootstrap.
+            </div>
+        </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4 text-primary">Formulario de Contacto</h2>
+
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Ingrese su email">
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Comentarios</label>
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center py-4">
+        <p class="mb-1">© 2025 Mi Sitio Bootstrap</p>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">GitHub</a> |
+        <a href="#">Evelin Loor</a>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
